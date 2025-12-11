@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Inside Growers - Gestão">
+    <meta name="author" content="Inside Growers">
+    <meta name="keywords" content="inside growers, gestão, custos, estoque, lotes">
+
+    <!-- Title Page-->
+    <title>Estoque de Suprimentos - Inside Growers</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/fontawesome-7.1.0/css/all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-5.3.8.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="css/aos.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="css/swiper-bundle-12.0.3.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar-1.5.6.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="page-container">
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+
+<div class="row mb-4">
+    <div class="col-md-12 d-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="title-1">Estoque de Suprimentos</h2>
+            <p class="text-muted mb-0">Controle de insumos utilizados nas bandejas e lotes.</p>
+        </div>
+        <a href="estoque-form.html" class="btn btn-primary btn-sm">
+            <i class="fa fa-plus me-1"></i>Adicionar
+        </a>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-control-label">Busca</label>
+                        <input type="text" class="form-control" placeholder="Nome, categoria...">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-control-label">Categoria</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option>Sementes</option>
+                            <option>Substrato</option>
+                            <option>Embalagens</option>
+                            <option>Aditivos</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-control-label">Unidade</label>
+                        <input type="text" class="form-control" placeholder="g, kg, L, un">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="button" class="btn btn-outline-secondary w-100">
+                            <i class="fa fa-search me-1"></i>Filtrar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive table--no-card m-b-30">
+                    <table class="table table-borderless table-striped table-earning align-middle">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Unidade</th>
+                                <th>Qtd atual</th>
+                                <th>Custo unitário (R$)</th>
+                                <th class="text-end">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Semente Girassol Premium</td>
+                                <td>Sementes</td>
+                                <td>kg</td>
+                                <td>5,00</td>
+                                <td>30,00</td>
+                                <td class="text-end">
+                                    <a href="estoque-form.html" class="btn btn-warning btn-sm">
+                                        <i class="fa fa-edit me-1"></i>Editar
+                                    </a>
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-trash me-1"></i>Excluir
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Substrato Fibra de Coco</td>
+                                <td>Substrato</td>
+                                <td>L</td>
+                                <td>40,00</td>
+                                <td>8,50</td>
+                                <td class="text-end">
+                                    <a href="estoque-form.html" class="btn btn-warning btn-sm">
+                                        <i class="fa fa-edit me-1"></i>Editar
+                                    </a>
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-trash me-1"></i>Excluir
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Linhas de exemplo -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright text-center py-3">
+                        <p>Inside Growers · Fase 1 · Layout baseado em CoolAdmin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery / Utils JS-->
+    <script src="js/vanilla-utils.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-5.3.8.bundle.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar-1.5.6.min.js"></script>
+    <script src="vendor/chartjs/chart.umd.js-4.5.1.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/bootstrap5-init.js"></script>
+    <script src="js/main-vanilla.js"></script>
+    <script src="js/swiper-bundle-12.0.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/modern-plugins.js"></script>
+</body>
+
+</html>

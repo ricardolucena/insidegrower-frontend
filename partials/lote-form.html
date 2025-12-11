@@ -1,0 +1,209 @@
+
+<div class="row mb-4">
+    <div class="col-md-12 d-flex justify-content-between align-items-center">
+        <h2 class="title-1 mb-0">Cadastro de Lote</h2>
+        <button class="btn btn-secondary btn-sm" data-page="lotes">
+            <i class="fa fa-arrow-left me-1"></i>Voltar
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-10">
+        <div class="card mb-4">
+            <div class="card-header">
+                <strong>Dados gerais do lote</strong>
+            </div>
+            <div class="card-body card-block">
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Identificador do lote</label>
+                                <input type="text" class="form-control" placeholder="LOT-2025-001">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Bandeja (template)</label>
+                                <select class="form-control">
+                                    <option></option>
+                                    <option>Bandeja Broto Girassol 01</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Status</label>
+                                <select class="form-control">
+                                    <option>Planejado</option>
+                                    <option>Em cultivo</option>
+                                    <option>Concluído</option>
+                                    <option>Descartado</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Data semeadura</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Data colheita (prevista)</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Quantidade de bandejas</label>
+                                <input type="text" class="form-control" placeholder="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-control-label">Observações</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <strong>Equipamentos do lote</strong>
+            </div>
+            <div class="card-body card-block">
+                <div class="table-responsive mb-2">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Equipamento</th>
+                                <th style="width: 15%;">Horas/dia</th>
+                                <th style="width: 15%;">Dias de uso</th>
+                                <th style="width: 5%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 55%;">
+                                    <select class="form-control">
+                                        <option>LED 120W Estante A</option>
+                                        <option>Bomba Reservatório 01</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="16">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="7">
+                                </td>
+                                <td class="text-end">
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn btn-outline-primary btn-sm mb-2">
+                    <i class="fa fa-plus me-1"></i>Adicionar equipamento
+                </button>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <strong>Suprimentos do lote</strong>
+            </div>
+            <div class="card-body card-block">
+                <div class="table-responsive mb-2">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Insumo</th>
+                                <th style="width: 20%;">Quantidade</th>
+                                <th>Observação</th>
+                                <th style="width: 5%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 45%;">
+                                    <select class="form-control">
+                                        <option>Semente Girassol</option>
+                                        <option>Substrato Fibra de Coco</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="300 g">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Opcional">
+                                </td>
+                                <td class="text-end">
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn btn-outline-primary btn-sm mb-2">
+                    <i class="fa fa-plus me-1"></i>Adicionar insumo
+                </button>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <strong>Resumo de custos (somente visual)</strong>
+            </div>
+            <div class="card-body card-block">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-control-label">Custo energia (R$)</label>
+                            <input type="text" class="form-control" value="0,00" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-control-label">Custo água (R$)</label>
+                            <input type="text" class="form-control" value="0,00" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-control-label">Custo insumos (R$)</label>
+                            <input type="text" class="form-control" value="0,00" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-control-label">Custo total estimado (R$)</label>
+                            <input type="text" class="form-control" value="0,00" disabled>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted mb-0">Os valores acima serão calculados pelo backend na próxima fase.</p>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa fa-save me-1"></i>Salvar lote
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm ms-2" data-page="lotes">
+                Cancelar
+            </button>
+        </div>
+    </div>
+</div>

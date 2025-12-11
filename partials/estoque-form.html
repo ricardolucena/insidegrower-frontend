@@ -1,0 +1,88 @@
+
+<div class="row mb-4">
+    <div class="col-md-12 d-flex justify-content-between align-items-center">
+        <h2 class="title-1 mb-0">Cadastro de Insumo</h2>
+        <button class="btn btn-secondary btn-sm" data-page="estoque">
+            <i class="fa fa-arrow-left me-1"></i>Voltar
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <strong>Dados do insumo</strong>
+            </div>
+            <div class="card-body card-block">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-control-label">Nome</label>
+                        <input type="text" class="form-control" placeholder="Ex: Semente Girassol Premium">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Categoria</label>
+                                <select class="form-control">
+                                    <option></option>
+                                    <option>Sementes</option>
+                                    <option>Substrato</option>
+                                    <option>Embalagens</option>
+                                    <option>Aditivos</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Unidade de medida</label>
+                                <input type="text" class="form-control" placeholder="g, kg, L, un">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Quantidade em estoque</label>
+                                <input type="text" class="form-control" placeholder="0,00">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Custo unitário (R$/unidade)</label>
+                                <input type="text" class="form-control" placeholder="0,00">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Fornecedor</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Data da última compra</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-control-label">Observações</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        <i class="fa fa-save me-1"></i>Salvar
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-sm ms-2" data-page="estoque">
+                        Cancelar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

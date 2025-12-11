@@ -1,0 +1,79 @@
+
+<div class="row mb-4">
+    <div class="col-md-12 d-flex justify-content-between align-items-center">
+        <h2 class="title-1 mb-0">Cadastro de Equipamento</h2>
+        <button class="btn btn-secondary btn-sm" data-page="equipamentos">
+            <i class="fa fa-arrow-left me-1"></i>Voltar
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <strong>Dados do equipamento</strong>
+            </div>
+            <div class="card-body card-block">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-control-label">Nome</label>
+                        <input type="text" class="form-control" placeholder="LED 120W Estante A">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Tipo</label>
+                                <select class="form-control">
+                                    <option></option>
+                                    <option>Iluminação</option>
+                                    <option>Bomba</option>
+                                    <option>Ventilador</option>
+                                    <option>Aquecimento</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Potência (W)</label>
+                                <input type="text" class="form-control" placeholder="120">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-control-label">Tensão (V)</label>
+                                <input type="text" class="form-control" placeholder="110 / 220">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-control-label">Local / Setor</label>
+                        <input type="text" class="form-control" placeholder="Estante A, Winter Box...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-control-label">Observações</label>
+                        <textarea class="form-control" rows="3" placeholder="Ex: Ligar 16h/dia"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="au-checkbox au-checkbox--sm">
+                            <input type="checkbox" checked>
+                            <span class="au-checkmark"></span> Ativo
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        <i class="fa fa-save me-1"></i>Salvar
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-sm ms-2" data-page="equipamentos">
+                        Cancelar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
